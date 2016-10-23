@@ -12,7 +12,7 @@
 	
 	//smart reply
 	$results = array();
-	$sql = mysql_query("SELECT * FROM `12sim.replies` WHERE `omit` = '0' AND `saying` LIKE '%$heard%'");
+	$sql = mysql_query("SELECT * FROM `12sim.replies` WHERE `omit` = '0' AND `saying` LIKE '%$heard%' LIMIT 400");
 	if (mysql_num_rows($sql) != 0){
 		while($row = mysql_fetch_array($sql)){
 			$tmp = $row["reply"];
