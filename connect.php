@@ -1,13 +1,8 @@
 <?php
-$host = 'localhost';
-
-//$username = 'root';
-$username = 'windsorf_scolezU';
-//$pass = 'pass';
-$pass = 'SB2Pi]}D$XBD';
-//$name = 'scolez';
-$name = 'windsorf_scolez';
+$host = getenv('DB_TWELVESIM_HOST');
+$username = getenv('DB_TWELVESIM_USER');
+$pass = getenv('DB_TWELVESIM_PW');;
+$name = getenv('DB_TWELVESIM_DB');;
 
 @mysql_connect("$host","$username","$pass") or die ("failed to connect to mysql database");
 @mysql_select_db("$name") or die ("couldnt find mysql database");
-?>
