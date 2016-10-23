@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'cool';
+	src: url('Greenscr.ttf');
+}
+html{
+	height:100%;
+}
+body{
+	height:100%;
+	margin:auto;
+	width:960px;
+}
+#input{
+	display:none;
+	width:90%;
+	border: none;
+	border-color: transparent;
+	outline: 0;
+}
+body,#input{
+	background:#1A1A1A;
+	color:#00D607;
+	font-family:"cool";
+}
+*::-webkit-input-placeholder,*:-moz-placeholder,*::-moz-placeholder,*:-ms-input-placeholder{
+	color:#00D607;
+}
+#div {
+	position:absolute;
+	bottom:150px;
+	width:960px;
+}
+p{
+	margin:0;
+	padding:0;
+}
+#wait{
+	font-size:16px;
+}

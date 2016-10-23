@@ -1,0 +1,88 @@
+@font-face {
+	font-family: 'cool';
+	src: url('Greenscr.ttf');
+}
+html{
+	height:100%;
+}
+body{
+	width:640px;
+	height:100%;
+	margin:auto;
+	background-color:#f9f5f1;
+	font-family: 'Open Sans', sans-serif;
+}
+#input{
+	width:90%;
+	font-size:21px;
+	padding:15px 20px 15px 20px;
+	outline:0;
+	border:none;
+	border-color:transparent;
+	font-family: 'Open Sans', sans-serif;
+	box-shadow: 0px 2px 2px 1px rgba(0,0,0,.2);
+	color:#3c3c3c;
+}
+#div {
+	position:absolute;
+	bottom:25%;
+	width:640px;
+	z-index:1;
+}
+p{
+	margin:0;
+	padding:6px 0 2px 0;
+	font-size:21px;
+}
+.user{
+	color:#04c6d2;
+}
+.bot{
+	color:#96783d;
+}
+#ad{
+	width:100%;
+	text-align:center;
+	z-index:101;
+}
+#style{
+	position:fixed;
+	padding:3% 6% 3% 6%;
+	top:0;
+	right:0;
+}
+#css{
+	appearance: none;
+	-webkit-appearance: none;
+	box-shadow: inset 0px 0px 0px 1px #e6e6e6;
+	border-radius: 15px;
+	background-color: #fff;
+	padding: 1px;
+	display: inline-block;
+	width: 52px;
+	height: 31px;
+	position: relative;
+	cursor: pointer;
+	transition: all .3s ease-out;
+	margin: 0px;
+	outline:0;
+	border:none;
+	border-color:transparent;
+}
+#css:checked{
+	box-shadow: inset 0px 0px 0px 20px #53d76a;
+}
+#css:after{
+	content: '';
+	position: absolute;
+	width: 29px;
+	height: 29px;
+	border-radius: 15px;
+	box-shadow: 0px 2px 2px 1px rgba(0,0,0,.2);
+	cursor: pointer;
+	background-color: #fff;
+	transition: all 0.1s ease-in .1s;
+}
+#css:checked:after{
+	left: 22px;
+}
